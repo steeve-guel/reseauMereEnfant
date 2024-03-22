@@ -1,0 +1,45 @@
+.carousel_items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.carousel_item {
+  position: relative;
+  min-width: 100%;
+  height: 100vh;
+  /* transition: all 0.5s linear; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.carousel_text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  /* padding: 0.5rem 1rem; */
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: calc(1.5rem + 0.3vw);
+  font-weight: bolder;
+  display: none;
+}
+
+.item1 {
+  background-image: linear-gradient(#91919177,#9191917e), url("/assets/img/img-caroussel/adorable-african-american-baby-vomiting-milk-her-mother-s-hand.jpg");
+}
+.item2 {
+  background-image: linear-gradient(#91919177,#9191917e), url("/assets/img/img-caroussel/african-mother-holding-little-girl.jpg");
+}
+.item3 {
+  background-image: linear-gradient(#91919177,#9191917e), url("/assets/img/img-caroussel/close-up-veterinarian-doing-some-tests.jpg");
+}
+.item4 {
+  background-image:linear-gradient(#91919177,#9191917e), url("/assets/img/img-caroussel/close-up-woman-holding-little-kid.jpg");
+}
+.item5 {
+  background-image:linear-gradient(#91919177,#9191917e), url("/assets/img/img-caroussel/mother-spending-time-with-her-beloved-child.jpg");
+}

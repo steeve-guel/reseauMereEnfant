@@ -1,0 +1,57 @@
+.section-footer {
+  background: #171717;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 84px 10px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-footer p {
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  word-spacing: 24px;
+}
+
+.section-reseau {
+  display: flex;
+  gap: 34px;
+}
+
+.reseau-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  position: relative;
+  background: var(--background-color-00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-mention-legale {
+  background: #262626;
+  padding: 34px 64px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 430px) {
+  .section-footer {
+    justify-content: flex-start;
+    align-items: start;
+    gap: 44px;
+    padding-left: 30px;
+  }
+}

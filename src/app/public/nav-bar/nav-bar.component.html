@@ -1,0 +1,61 @@
+<header class="mat-elevation-z2">
+  <section class="tete">
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      "
+    >
+      <div class="bx bx-menu" (click)="menu()" id="menu-icon">
+        <svg
+          class="nav-svg-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          height="28"
+          viewBox="0 -960 960 960"
+          width="28"
+        >
+          <path
+            d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+          />
+        </svg>
+      </div>
+      <a href="/" class="logo">
+        <div
+          style="
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <div>
+            <img
+              style="width: 54px"
+              src="/assets/img/logo.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <p class="struture">Réseau mère - Enfant</p>
+        </div>
+      </a>
+    </div>
+
+    <ul class="nav-bar">
+      <li><a href="#">Remehbs</a></li>
+      <li><a href="#">Journées remehbs 2025</a></li>
+      <li><a routerLink="/carte">Communication 6e journees</a></li>
+      <!-- <li><a routerLink="/dash">Tableau de bord</a></li> -->
+      <li><a routerLink="/">Contacts</a></li>
+    </ul>
+
+    <div class="main">
+      <a routerLink="/login" class="user mat-elevation-z1">Adhesion</a>
+      <!-- <a routerLink="/register" class="mat-elevation-z1 inscription">S'inscrire</a> -->
+      <a hidden style="cursor: pointer" (click)="logout()">Logout</a>
+    </div>
+  </section>
+</header>

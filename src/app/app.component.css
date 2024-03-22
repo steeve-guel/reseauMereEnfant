@@ -1,0 +1,45 @@
+span {
+  font-size: 0.8rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2%;
+  padding-block-start: 16px;
+}
+
+.info-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+}
+
+.info-contact p,
+.info-log p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.info-log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 730px) {
+  .info-contact span {
+    display: none;
+  }
+
+  .info-contact .custom-question {
+    display: none;
+  }
+}
