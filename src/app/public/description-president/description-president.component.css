@@ -51,4 +51,8 @@
     text-align: center;
     padding-inline: 12%;
   }
+
+  .pics{
+    width: 300px;
+  }
 }
