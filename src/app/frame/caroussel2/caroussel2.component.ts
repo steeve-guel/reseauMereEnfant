@@ -1,19 +1,18 @@
 import { afterRender, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-caroussel',
+  selector: 'app-caroussel2',
   standalone: true,
   imports: [],
-  templateUrl: './caroussel.component.html',
-  styleUrl: './caroussel.component.css',
+  templateUrl: './caroussel2.component.html',
+  styleUrl: './caroussel2.component.css',
 })
-export class CarousselComponent {
+export class Caroussel2Component {
   constructor() {
     afterRender(() => {
       this.showSlides();
     });
   }
-
 
   showSlides() {
     let carouselItems = document.querySelectorAll(

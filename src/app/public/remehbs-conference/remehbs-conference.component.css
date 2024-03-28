@@ -1,0 +1,39 @@
+section{
+    padding: 12px;
+    padding-inline: 6%;
+    background: #f8f8f8;
+}
+
+.custom-hero-title{
+    background: #fff;
+   
+}
+
+.custom-hero-title h2{
+    text-align: center; padding-block: 14px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.custom-pdf-item{
+    padding: 12px;
+    margin-block: 14px;background: #fff;
+}
+
+.custom-pdf-title{
+    color: #251d56;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.custom-pdf-text{
+    color: #fc64bf;
+}
+
+button{
+    width: 100%;
+    color: #262626ad !important;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-block: 18px;
+}

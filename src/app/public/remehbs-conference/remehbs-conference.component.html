@@ -1,0 +1,24 @@
+<section>
+  <div class="custom-hero-title mat-elevation-z2">
+    <h2>REMEHBS PDF conference 2025</h2>
+  </div>
+
+  <div *ngFor="let item of dataSource | slice : 0 : limit">
+    <div>
+      <h1 style="margin-block: 22px;">{{ item.categorie }}</h1>
+      <div *ngFor="let pdf of item.listePdf">
+        <div class="custom-pdf-item mat-elevation-z2">
+          <p class="custom-pdf-title">{{ pdf.nomDocument }}</p>
+          <p class="custom-pdf-text">
+            <span> <small> {{ pdf.taille }} </small> . </span> <span> {{pdf.datePublication}} </span>
+           
+          </p>
+          <p>Auteur : {{ pdf.auteur }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button mat-raised-button (click)="loadMore()" *ngIf="limit < dataSource.length">
+    Charger plus
+  </button>
+</section>

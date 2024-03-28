@@ -72,6 +72,7 @@ header .tete.sticky .struture{
   margin: 0 30px;
   transition: all 0.2s ease;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav-bar a:hover {

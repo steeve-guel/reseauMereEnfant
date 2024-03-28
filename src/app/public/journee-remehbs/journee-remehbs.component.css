@@ -1,0 +1,25 @@
+button {
+    background: #e8c2d9 !important;
+    font-weight: 600 !important;
+  }
+  
+  .custom-caroussel {
+    position: relative;
+  }
+  
+  .custom-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+  }
+  
+  .custom-title {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 500;
+    color: #fff;
+    margin-block-end: 34px;
+    line-height: 1.5;
+  }

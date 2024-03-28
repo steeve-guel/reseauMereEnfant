@@ -17,11 +17,11 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-block-end: 34px;
-  color: #ff91af;
+  color: #e8c2d9;
 }
 
 .custom-heading h1 {
-  color: #0047AB;
+  color: #251d56;
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 500;
   margin-block: 64px;
