@@ -35,6 +35,9 @@ header .tete.sticky .struture{
   color: #262626;
 }
 
+img{
+  mix-blend-mode: multiply !important;
+}
 .nav-svg-icon {
   cursor: pointer;
 }

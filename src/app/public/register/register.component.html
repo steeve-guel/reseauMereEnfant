@@ -1,7 +1,7 @@
 <section>
   <div class="register-container mat-elevation-z4">
     <!-- <p><a href="#">retour</a></p> -->
-    <div class="pics" style="">
+    <div class="pics">
       <img
         src="/assets/img/register/pexels-anna-shvets-11369288.jpg"
         alt=""
@@ -55,36 +55,94 @@
                   </g>
                 </g></svg
             ></span>
-            Retour a page d'acceuil</a>
+            Retour a page d'acceuil</a
+          >
         </div>
       </div>
     </div>
 
-    <form style="padding: 17px; width: 50%">
-      <h1>Créer un compte</h1>
-      <div class="form-grid">
-        <mat-form-field class="example-full-width" [style.fontSize.px]="17">
-          <mat-label>Nom et Prénom</mat-label>
-          <input matInput placeholder="Ex. Traore Pierre" />
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="Ex. exemple@exemple.com" />
-        </mat-form-field>
+    <form style="padding: 17px; width: 100%">
+      <div>
+        <h1>Information de connexion</h1>
+
+        <div class="form-grid">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. exemple@exemple.com" />
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Confirmation mot de passe</mat-label>
+            <input matInput />
+          </mat-form-field>
+        </div>
       </div>
-      <div class="form-grid">
-        <mat-form-field class="example-full-width">
-          <mat-label>Mot de passe</mat-label>
-          <input matInput />
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <mat-label>Confirmation mot de passe</mat-label>
-          <input matInput />
-        </mat-form-field>
+      <div>
+        <h1>Information du compte</h1>
+
+        <div class="form-grid">
+          <mat-form-field>
+            <mat-label>Civilité</mat-label>
+            <mat-select>
+              <mat-option value="Mr">Mr</mat-option>
+              <mat-option value="Mme">Mme</mat-option>
+              <mat-option value="Dr">Dr</mat-option>
+              <mat-option value="Prof">Prof</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Nom</mat-label>
+            <input matInput placeholder="Ex. Traore" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Prenom</mat-label>
+            <input matInput placeholder="Ex. Pierre" />
+          </mat-form-field>
+        </div>
+
+        <div class="form-grid">
+          <mat-form-field>
+            <mat-label>Sexe</mat-label>
+            <mat-select>
+              <mat-option value="homme">Homme</mat-option>
+              <mat-option value="femme">Femme</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Profession</mat-label>
+            <input matInput placeholder="Ex. Ingénieur..." />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Organisme affilié</mat-label>
+            <input matInput placeholder="Ex. ..." />
+          </mat-form-field>
+        </div>
+        <div class="form-grid">
+          
+          <mat-form-field class="example-full-width">
+            <mat-label>Télephone</mat-label>
+            <input matInput placeholder="Ex. XX-XX-XX-XX" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Adresse</mat-label>
+            <input matInput placeholder="Ex. Bobo-Dioulasso" />
+          </mat-form-field>
+        </div>
+
+        <div class="form-grid">
+          <mat-form-field class="form-grid-item">
+            <mat-label>Bibliographie</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
+        </div>
       </div>
 
       <div class="form-grid">
-        <button mat-raised-button>Enregistrer</button>
+        <button mat-raised-button title="Inscription">Enregistrer</button>
       </div>
 
       <p style="text-align: center; margin-block-start: 12px">
