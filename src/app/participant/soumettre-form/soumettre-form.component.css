@@ -1,0 +1,69 @@
+.custom-hero {
+    padding: 112px 12px 4.5%;
+    background: #262626;
+}
+
+h2,
+p {
+    color: #251d56;
+}
+
+.custom-hero h1 {
+    text-align: center;
+    color: #fff;
+    margin-block-start: 34px;
+}
+
+.custom-soumission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.custom-title {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #251d56;
+    color: #fff;
+}
+
+.custom-title h1 {
+    padding-block-start: 12px;
+}
+
+.custom-form {
+    width: 60%;
+    margin-block: 24px;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.mat-mdc-radio-button~.mat-mdc-radio-button {
+    margin-left: 16px;
+
+}
+
+.custom-send-btn {
+    background: #251d56 !important;
+    color: #fff !important;
+}
+
+.bbst-full-width {
+    width: 100%;
+  }
+  
+  .btn-fichier {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-color: var(--background-color);
+    font-size: clamp(0.8rem, 2vw, 1rem) !important;
+    font-weight: 500;
+    color: #fff;
+  }

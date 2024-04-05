@@ -4,6 +4,7 @@ import { RegisterComponent } from './public/register/register.component';
 import { JourneeRemehbsComponent } from './public/journee-remehbs/journee-remehbs.component';
 import { RemehbsComponent } from './public/remehbs/remehbs.component';
 import { LoginComponent } from './public/login/login.component';
+import { SoumettreFormComponent } from './participant/soumettre-form/soumettre-form.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'remehbs', pathMatch: 'full' }, //redirection vers
@@ -14,6 +15,7 @@ export const routes: Routes = [
       { path: '', redirectTo: 'accueil', pathMatch: 'full' },
       { path: 'accueil', component: AccueilComponent },
       { path: 'journee-remehbs', component: JourneeRemehbsComponent },
+      { path: 'soummettre', component: SoumettreFormComponent },
     ],
   },
   { path: 'remehbs-register', component: RegisterComponent },
