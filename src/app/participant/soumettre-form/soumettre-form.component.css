@@ -56,9 +56,9 @@ p {
 
 .bbst-full-width {
     width: 100%;
-  }
-  
-  .btn-fichier {
+}
+
+.btn-fichier {
     width: 160px;
     height: 50px;
     margin-bottom: 16px;
@@ -66,4 +66,18 @@ p {
     font-size: clamp(0.8rem, 2vw, 1rem) !important;
     font-weight: 500;
     color: #fff;
-  }
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-title{
+        width: 90%;
+    }
+
+    .custom-form{
+        width: 90%;
+    }
+
+    .btn-fichier{
+        width: 90px;
+    }
+}

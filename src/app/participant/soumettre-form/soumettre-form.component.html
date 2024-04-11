@@ -12,15 +12,18 @@
       <button type="submit">Scan</button>
       <div *ngIf="progress">Progress: {{ progress }}%</div>
     </form> -->
-    
+
     <form [formGroup]="profileForm">
-      <div style="display: flex; flex-direction: column">
-        <label id="Type de document">Type de document</label>
-        <mat-radio-group aria-labelledby="Type de document">
-          <mat-radio-button value="1">Article</mat-radio-button>
-          <mat-radio-button value="3">Poster</mat-radio-button>
-          <mat-radio-button value="2">Communication</mat-radio-button>
-        </mat-radio-group>
+
+      <div>
+        <mat-form-field class="example-full-width">
+          <mat-label>Type de soumission</mat-label>
+          <mat-select>
+            <mat-option value="Article">Article</mat-option>
+            <mat-option value="Poster">Poster</mat-option>
+            <mat-option value="Communication">Communication</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
 
       <div>
@@ -67,29 +70,18 @@
       </div>
 
       <div>
-        <h2>Nom(s) de famille de l'auteur ou de l'autrice principal-e</h2>
+        <h2>Nom(s) et Prénom(s) de famille de l'auteur ou de l'autrice principal-e</h2>
         <p>Comme vous souhaitez qu'il(s) apparaisse(nt).</p>
         <mat-form-field class="example-full-width">
-          <mat-label>Nom de l'auteur ou de l'autrice*</mat-label>
-          <input matInput placeholder="Ex. Traore" />
-        </mat-form-field>
-      </div>
-
-      <div>
-        <h2>Prénom(s) de l'auteur ou de l'autrice principal-e</h2>
-        <p>
-          Écrivez ce(s) prénom(s) comme vous souhaitez qu'il(s) apparaisse(nt).
-        </p>
-        <mat-form-field class="example-full-width">
-          <mat-label>Prénom de l'auteur ou de l'autrice *</mat-label>
-          <input matInput placeholder="Ex. Pierre" />
+          <mat-label>Nom et prénom *</mat-label>
+          <input matInput placeholder="Ex. Traore Pierre" />
         </mat-form-field>
       </div>
 
       <div>
         <h2>Résumé de votre proposition de contribution</h2>
         <p>
-          Copiez ici le résumé de votre article - maximum 200-230 mots, sans
+          Copiez ici le résumé de votre article - maximum 200-250 mots, sans
           référence bibliographique.
         </p>
         <mat-form-field class="example-full-width">
@@ -106,7 +98,6 @@
         </p>
 
         <div *ngFor="let alias of aliases.controls; let i = index">
-    
           <mat-form-field class="example-full-width">
             <mat-label>mots cles {{ i + 1 }} *</mat-label>
             <input
@@ -116,7 +107,6 @@
               placeholder="Ex. maternité"
             />
           </mat-form-field>
-          
         </div>
         <button
           mat-raised-button
@@ -129,37 +119,37 @@
       </div>
 
       <div
-      (click)="fichierInput.click()"
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 4px;
-        margin-block-start: 22px ;
-      "
-    >
-      <button type="button" class="btn-fichier" mat-raised-button>
-        Fichier
-      </button>
-      <mat-form-field class="bbst-full-width">
-        <mat-label>Fichier</mat-label>
+        (click)="fichierInput.click()"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          margin-block-start: 22px;
+        "
+      >
+        <button type="button" class="btn-fichier" mat-raised-button>
+          Fichier
+        </button>
+        <mat-form-field class="bbst-full-width">
+          <mat-label>Fichier</mat-label>
 
-        <input
-          type="text"
-          class="bbst-full-width"
-          matInput
-          value="{{ nomFichier }}"
-          readonly
-        />
-      </mat-form-field>
-    </div>
-    <input
-      (change)="onFileSelected($event)"
-      #fichierInput
-      hidden
-      type="file"
-      id="file"
-    />
+          <input
+            type="text"
+            class="bbst-full-width"
+            matInput
+            value="{{ nomFichier }}"
+            readonly
+          />
+        </mat-form-field>
+      </div>
+      <input
+        (change)="onFileSelected($event)"
+        #fichierInput
+        hidden
+        type="file"
+        id="file"
+      />
 
       <div style="margin-block: 24px">
         <button class="custom-send-btn example-full-width" mat-raised-button>
