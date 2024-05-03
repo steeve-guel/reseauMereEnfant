@@ -1,9 +1,9 @@
 section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: #f8f8f8;
-    padding: 12px 8%;
+    padding: 62px 8%;
     /* background: linear-gradient(#e8c2d950, #e8c2d952), url(/assets/img/img-caroussel-2/A004C018_210726_K7B4.MOV.20_44_57_04.Still001.jpg) no-repeat; */
     background-position: center;
     background-size: cover;
@@ -11,8 +11,9 @@ section {
 
 .register-container {
     position: relative;
-    
+    height: auto;
     background: #f8f8f8;
+    
    
     /* border-radius: 2%; */
    
@@ -102,7 +103,7 @@ button {
         display: block;
         height: 90vh;
         overflow-y: scroll;
-        width: 95%;
+        width: 100%;
     }
 
     .pics{
