@@ -8,9 +8,9 @@ section {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.1rem, 3vw, 3rem);
   font-weight: 500;
-  color: #ff91af;
+  color: #251d56;
   margin-block-end: 38px;
   margin-block-start: 12px;
 }
@@ -33,12 +33,12 @@ h3 {
 .equipe-grid {
   display: grid;
   gap: 38px;
-  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
 }
 
 [class*="equipe-pics"] {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background: #0047ab;
   border-radius: 8%;
   background-position: center;
@@ -47,9 +47,23 @@ h3 {
   position: relative;
 }
 
+.equipe-item {
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.rem-fonc {
+  color: #f02b5f;
+  font-weight: 500;
+}
+
 .equipe-item p {
-  width: 300px;
+  /* width: 300px; */
   text-align: center;
+  padding-inline: 8px;
 }
 
 @media only screen and (max-width: 1024px) {

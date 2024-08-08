@@ -1,9 +1,16 @@
+
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: EncodeSansSemiExpanded-Regular;
+  src: url(/assets/fonts/Encode_Sans_Semi_Expanded/EncodeSansSemiExpanded-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Lato-Regular, sans-serif;
+  font-family: EncodeSansSemiExpanded-Regular,Lato-Regular, sans-serif;
   list-style: none;
   text-decoration: none !important;
   min-width: 0;
