@@ -10,6 +10,17 @@
   background: #f8f8f8;
 }
 
+.mot-remehbs {
+  background: #fff;
+  padding-block: 12px;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
 .rem-title {
   font-size: clamp(1.2rem, 3vw, 3rem);
   font-weight: 500;
@@ -55,6 +66,8 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  max-height: 480px;
+  overflow: hidden;
 }
 
 .rem-coord {
@@ -68,7 +81,49 @@
   font-size: 1.1rem;
 }
 
+/**Text container */
+
+.text-container {
+  max-height: 480px;
+  overflow: hidden;
+  position: relative;
+
+  padding-inline: 10%;
+  padding-block: 2%;
+}
+
+.text-container.show-all {
+  max-height: none;
+}
+
+.text-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
+  pointer-events: none;
+}
+
+.text-container.show-all::after {
+  display: none;
+}
+
+.show-more-btn {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/** */
+
 @media only screen and (max-width: 1024px) {
+
   /* .custom-container{
     flex-direction: column;
   } */

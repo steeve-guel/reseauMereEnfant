@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class DescriptionPresidentComponent {
 
+  ngOnInit() {
+    const textContainer = document.querySelector('.text-container');
+    const showMoreBtn = document.querySelector('.show-more-btn');
+
+    showMoreBtn!.addEventListener('click', () => {
+      textContainer!.classList.toggle('show-all');
+      showMoreBtn!.textContent = textContainer!.classList.contains('show-all') ? 'Afficher moins' : 'Afficher plus';
+    });
+  }
+
 }
