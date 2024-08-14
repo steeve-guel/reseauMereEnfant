@@ -30,6 +30,6 @@ export class JourneeRemehbsComponent {
   }
 
   soumettre(){
-    this.router.navigate(['/remehbs/soummettre'],{relativeTo:this.route});
+    this.router.navigate(['/remehbs-register'],{relativeTo:this.route});
   }
 }

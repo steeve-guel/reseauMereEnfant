@@ -70,6 +70,10 @@
   overflow: hidden;
 }
 
+.coord-sec{
+  display: flex; gap: 42px;
+}
+
 .rem-coord {
   color: #251d56;
   font-weight: 500;
@@ -90,6 +94,8 @@
 
   padding-inline: 10%;
   padding-block: 2%;
+
+  text-align: justify;
 }
 
 .text-container.show-all {

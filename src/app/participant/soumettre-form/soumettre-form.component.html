@@ -1,8 +1,13 @@
 <section class="custom-hero">
-  <h1>Sommettre votre documents</h1>
+  <div class="custom-head">
+    <h1>Appel à projet</h1>
+    <p></p>
+  </div>
 </section>
 
 <section class="custom-soumission">
+  <!-- <h1 class="ref-sec">Sommettre votre documents</h1> -->
+
   <div class="custom-title">
     <h1>Formulaire de soumission</h1>
   </div>
@@ -14,7 +19,6 @@
     </form> -->
 
     <form [formGroup]="profileForm">
-
       <div>
         <mat-form-field class="example-full-width">
           <mat-label>Type de soumission</mat-label>
@@ -70,7 +74,9 @@
       </div>
 
       <div>
-        <h2>Nom(s) et Prénom(s) de famille de l'auteur ou de l'autrice principal-e</h2>
+        <h2>
+          Nom(s) et Prénom(s) de famille de l'auteur ou de l'autrice principal-e
+        </h2>
         <p>Comme vous souhaitez qu'il(s) apparaisse(nt).</p>
         <mat-form-field class="example-full-width">
           <mat-label>Nom et prénom *</mat-label>
@@ -158,4 +164,8 @@
       </div>
     </form>
   </div>
+</section>
+
+<section>
+  <app-footer />
 </section>

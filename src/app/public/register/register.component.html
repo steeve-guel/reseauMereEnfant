@@ -1,4 +1,4 @@
-<section >
+<section>
   <div class="register-container mat-elevation-z4">
     <!-- <p><a href="#">retour</a></p> -->
     <div class="pics">
@@ -61,7 +61,11 @@
       </div>
     </div>
 
-    <form style="padding: 17px; width: 100%">
+    <form
+      style="padding: 17px; width: 100%"
+      [formGroup]="registerForm"
+      (ngSubmit)="handleSubmit()"
+    >
       <div>
         <h1>Information de connexion</h1>
 
@@ -122,7 +126,6 @@
           </mat-form-field>
         </div>
         <div class="form-grid">
-          
           <mat-form-field class="example-full-width">
             <mat-label>Télephone</mat-label>
             <input matInput placeholder="Ex. XX-XX-XX-XX" />

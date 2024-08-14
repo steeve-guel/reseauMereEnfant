@@ -1,6 +1,22 @@
 .custom-hero {
-    padding: 112px 12px 4.5%;
-    background: #262626;
+    padding: 314px 12px 4.5%;
+    background: linear-gradient(#2626268e,#26262681), url(/assets/img/20210817_112933.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.custom-hero h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+}
+
+.ref-sec{
+  margin-block-start: 32px;
 }
 
 h2,
@@ -8,10 +24,16 @@ p {
     color: #251d56;
 }
 
-.custom-hero h1 {
+.custom-hero .custom-head {
     text-align: center;
     color: #fff;
     margin-block-start: 34px;
+}
+
+.custom-head h1{
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: 500;
 }
 
 .custom-soumission {
@@ -19,6 +41,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-block-start: 24px;
 }
 
 .custom-title {
@@ -27,8 +50,8 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #251d56;
-    color: #fff;
+    background: #251d5617;
+    color: #262626;
 }
 
 .custom-title h1 {

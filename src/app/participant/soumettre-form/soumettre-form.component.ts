@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 
+
 import {
   FormArray,
   FormBuilder,
@@ -13,6 +14,7 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from '../../public/footer/footer.component';
 
 @Component({
   selector: 'app-soumettre-form',
@@ -26,6 +28,7 @@ import { CommonModule } from '@angular/common';
     MatButtonModule,
     ReactiveFormsModule,
     CommonModule,
+    FooterComponent,
   ],
   templateUrl: './soumettre-form.component.html',
   styleUrl: './soumettre-form.component.css',
@@ -54,8 +57,8 @@ export class SoumettreFormComponent {
   addAlias() {
     if (this.aliasCount <= 5) {
       this.aliases.push(this.fb.control(''));
-      this.aliasCount +=1; 
-    } 
+      this.aliasCount +=1;
+    }
   }
 
   onFileSelected(event: any): void {
