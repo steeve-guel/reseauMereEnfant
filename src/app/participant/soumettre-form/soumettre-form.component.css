@@ -1,106 +1,129 @@
 .custom-hero {
-    padding: 314px 12px 4.5%;
-    background: linear-gradient(#2626268e,#26262681), url(/assets/img/20210817_112933.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  /* padding: 314px 12px 4.5%; */
+  background: linear-gradient(#262626bb, #262626a9), url(/assets/img/20210817_112933.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 60vh;
 }
 
-.custom-hero h1{
+.custom-pics {}
+
+/* .custom-hero h1{
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   padding: 24px;
-}
+} */
 
-.ref-sec{
+.ref-sec {
   margin-block-start: 32px;
 }
 
 h2,
 p {
-    color: #251d56;
+  color: #251d56;
 }
 
 .custom-hero .custom-head {
-    text-align: center;
-    color: #fff;
-    margin-block-start: 34px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
 }
 
-.custom-head h1{
+.custom-head h1,
+p {
+  text-align: center;
+  color: #fff;
+}
+
+.custom-head h1 {
+
   text-transform: uppercase;
   font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 500;
 }
 
 .custom-soumission {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-block-start: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block-start: 24px;
 }
 
 .custom-title {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #251d5617;
-    color: #262626;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border-top: 4px solid #251d56; */
+  background: #c1c1c1cb;
+  color: #262626;
+  margin-block-end: 14px;
 }
 
 .custom-title h1 {
-    padding-block-start: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding-block: 0px;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .custom-form {
-    width: 60%;
-    margin-block: 24px;
+  width: 65%;
+  margin-block: 24px;
+  border: 1px solid #c1c1c1;
+  padding: 28px;
+  border-radius: 4px;
 }
 
 .example-full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .mat-mdc-radio-button~.mat-mdc-radio-button {
-    margin-left: 16px;
+  margin-left: 16px;
 
 }
 
 .custom-send-btn {
-    background: #251d56 !important;
-    color: #fff !important;
+  background: #251d56 !important;
+  color: #fff !important;
 }
 
 .bbst-full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .btn-fichier {
-    width: 160px;
-    height: 50px;
-    margin-bottom: 16px;
-    background-color: var(--background-color);
-    font-size: clamp(0.8rem, 2vw, 1rem) !important;
-    font-weight: 500;
-    color: #fff;
+  width: 160px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-color: var(--background-color);
+  font-size: clamp(0.8rem, 2vw, 1rem) !important;
+  font-weight: 500;
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
-    .custom-title{
-        width: 90%;
-    }
+  .custom-title {
+    width: 90%;
+  }
 
-    .custom-form{
-        width: 90%;
-    }
+  .custom-form {
+    width: 90%;
+  }
 
-    .btn-fichier{
-        width: 90px;
-    }
+  .btn-fichier {
+    width: 90px;
+  }
 }
